@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
     res.render('form', { title: '' });
   });
 
+router.get('/askacoach', (req, res) => {
+    res.render('askacoach', { title: '' });
+  });
+
   router.post('/',
   [
     check('answer')
